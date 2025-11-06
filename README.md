@@ -40,7 +40,6 @@ Each task focuses on a specific TypeScript concept:
 - Created `sumMajorCredits` and `sumMinorCredits` functions returning strongly-typed results.
 
 ---
-
 ## Technologies Used
 - TypeScript
 - Webpack
