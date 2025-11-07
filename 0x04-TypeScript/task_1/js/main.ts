@@ -19,11 +19,11 @@ const teacher3: Teacher = {
 console.log(teacher3);
 
 // Task 2: Directors interface extending Teacher
-interface Directors extends Teacher {
+interface Director extends Teacher {
     numberOfReports: number;
 }
 
-const director1: Directors = {
+const director1: Director = {
     firstName: 'John',
     lastName: 'Doe',
     location: 'London',
@@ -38,8 +38,7 @@ interface printTeacherFunction {
 }
 
 const printTeacher: printTeacherFunction = (firstName, lastName) => {
-    return `${firstName.charAt(0)}. ${lastName}`;
-};
+  return `${firstName}. ${lastName}`;};
 
 // Task 4: StudentClass
 interface StudentConstructor {
@@ -55,7 +54,7 @@ interface StudentClassInterface {
 class StudentClass implements StudentClassInterface {
     firstName: string;
     lastName: string;
-    constructor({ firstName, lastName }: StudentConstructor) {
+      constructor(firstName: string, lastName: string) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
